@@ -23,7 +23,7 @@ function isDynamoDBResource(resource: Resource): resource is DynamoDBResource {
   return resource.Type === "AWS::DynamoDB::Table";
 }
 
-type AWSResourceList = { Resources: { [key: string]: Resource } }
+type AWSResourceList = { Resources: { [key: string]: Resource } };
 
 export function getCreateTableCommandInput(
   resources: AWSResourceList[] | AWSResourceList

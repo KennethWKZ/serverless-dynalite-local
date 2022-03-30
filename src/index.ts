@@ -33,7 +33,9 @@ class ServerlessDynaliteLocal {
 
     this.log = (str: string, pluginName: string) =>
       serverless.cli.log(str, pluginName);
-    this.tables = getCreateTableCommandInput(serverless.service.resources);
+    this.tables =
+      serverless.service.resources &&
+      getCreateTableCommandInput(serverless.service.resources);
 
     if (serverless.service.custom.dynalite?.port != null) {
       this.port = serverless.service.custom.dynalite.port;
