@@ -66,23 +66,25 @@ class ServerlessDynaliteLocal {
       endpoint: `http://localhost:${port}`,
     });
 
-    await Promise.all(
-      this.tables.map(async (table) => {
-        this.log(
-          `Creating table ${table.TableName}`,
-          "serverless-dynalite-local"
-        );
-        try {
-          await client.send(new CreateTableCommand(table));
-        } catch (e: any) {
-          if (e && e.name === "ResourceInUseException") {
-            console.log(`Table ${table.TableName} already exists.`);
-          } else {
-            throw e;
+    if (this.tables) {
+      await Promise.all(
+        this.tables.map(async (table) => {
+          this.log(
+            `Creating table ${table.TableName}`,
+            "serverless-dynalite-local"
+          );
+          try {
+            await client.send(new CreateTableCommand(table));
+          } catch (e: any) {
+            if (e && e.name === "ResourceInUseException") {
+              console.log(`Table ${table.TableName} already exists.`);
+            } else {
+              throw e;
+            }
           }
-        }
-      })
-    );
+        })
+      );
+    }
   }
 
   async endHandler() {
