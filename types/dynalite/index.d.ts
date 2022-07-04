@@ -1,4 +1,4 @@
-declare module "dynalite" {
+declare module "dynalite-kwz" {
   import { Server } from "http";
 
   type DynaliteOptions = {

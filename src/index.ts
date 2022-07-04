@@ -3,7 +3,7 @@ import {
   CreateTableCommandInput,
   DynamoDBClient,
 } from "@aws-sdk/client-dynamodb";
-import dynalite from "dynalite";
+import dynalite from "dynalite-kwz";
 import { AddressInfo } from "net";
 import { getCreateTableCommandInput } from "./util";
 
