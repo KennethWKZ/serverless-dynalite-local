@@ -1574,10 +1574,10 @@ duplexer3@^0.1.4:
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
-dynalite@^3.2.2:
+dynalite-kwz@^3.2.2:
   version "3.2.2"
-  resolved "https://registry.yarnpkg.com/dynalite/-/dynalite-3.2.2.tgz#34b4f4dd69638f17c0f7551a867959972c892441"
-  integrity sha512-sx9ZjTgMs/D4gHnba4rnBkw29648dHwHmywJet132KAbiq1ZyWx9W1fMd/eP9cPwTKDXyCBuTYOChE0qMDjaXQ==
+  resolved "https://registry.yarnpkg.com/dynalite-kwz/-/dynalite-kwz-3.2.2.tgz#c76bf4fa51f41bdb655ab80551a72800c363fd07"
+  integrity sha512-5Vz174APjk6bZy/ZkKnv7wRdGXgOrhhwpiqFvnampvffhew9IUBmx6hzy5y+zDNFuQvqnSu5WPrgIIOU9d81ew==
   dependencies:
     async "^2.6.3"
     big.js "^5.2.2"

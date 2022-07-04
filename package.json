@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.58.0",
-    "dynalite": "^3.2.2"
+    "dynalite-kwz": "^3.2.2"
   },
   "files": [
     "lib/**/*.{js,js.map}"
